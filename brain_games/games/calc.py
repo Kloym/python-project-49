@@ -5,15 +5,15 @@ game_quest = "What is the result of the expression?"
 
 
 def question_and_answer():
-    num1 = random.randint(1, 20)
-    num2 = random.randint(1, 20)
+    number1 = random.randint(1, 20)
+    number2 = random.randint(1, 20)
     operators = "+-*"
-    operator = random.choice(operators)
-    question = f"{num1} {operator} {num2}"
+    operation = random.choice(operators)
+    question = f"{number1} {operation} {number2}"
     if operator == "+":
-        answer = num1 + num2
+        answer = number1 + number2
     elif operator == "-":
-        answer = num1 - num2
+        answer = number1 - number2
     else:
-        answer = num1 * num2
-    return question, answer, game_quest
+        answer = number1 * number2
+    return question, answer
