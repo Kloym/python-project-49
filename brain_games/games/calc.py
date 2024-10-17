@@ -10,9 +10,9 @@ def question_and_answer():
     operators = "+-*"
     operation = random.choice(operators)
     question = f"{number1} {operation} {number2}"
-    if operator == "+":
+    if operators == "+":
         answer = number1 + number2
-    elif operator == "-":
+    elif operators == "-":
         answer = number1 - number2
     else:
         answer = number1 * number2
