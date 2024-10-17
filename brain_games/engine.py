@@ -2,7 +2,7 @@ import prompt
 from brain_games.cli import welcome_user
 
 
-def run_start_to_end(game):
+def run_game(game):
     name = welcome_user()
     print(game.game_quest)
     count = 0
